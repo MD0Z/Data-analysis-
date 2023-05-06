@@ -1,0 +1,28 @@
+--------------------------------------------------------------------------------------------------------------
+Report
+--------------------------------------------------------------------------------------------------------------
+Problem: 
+
+prediction of Stock Price, based on the key country features and recognition of key factors influencing the target
+--------------------------------------------------------------------------------------------------------------
+Aproach
+--------------------------------------------------------------------------------------------------------------
+Chosen model:
+
+Linear Regression
+--------------------------------------------------------------------------------------------------------------
+Preprocessing:
+
+Dropping features highly corelated with others to avoid collinearity
+One-Hot encoding for region as it represent general geopolitical situation of the country
+Droping features that affect generalization ability of the model (Country, Year)
+
+Results
+
+Metrics:
+
+R2: 1
+--------------------------------------------------------------------------------------------------------------
+Validation method:
+
+Metrics were calculated on test sample randomly excluded from set, that wasn't previously presented to the model

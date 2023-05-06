@@ -1,0 +1,28 @@
+--------------------------------------------------------------------------------------------------------------
+Report
+--------------------------------------------------------------------------------------------------------------
+Problem: 
+
+prediction of life expectancy, based on the key country features and recognition of key factors influencing the target
+--------------------------------------------------------------------------------------------------------------
+Aproach
+--------------------------------------------------------------------------------------------------------------
+Chosen model:
+
+Decission Tree Regression
+REASON: Decission Tree presented better results in term of chosen evaluation metrics
+--------------------------------------------------------------------------------------------------------------
+Preprocessing:
+
+Dropping features highly corelated with others to avoid collinearity
+One-Hot encoding for region as it represent general geopolitical situation of the country
+Droping features that affect generalization ability of the model (Country, Year)
+Results
+Metrics:
+
+MSE: 0.921206
+R2: 0.988900
+--------------------------------------------------------------------------------------------------------------
+Validation method:
+
+Metrics were calculated on test sample randomly excluded from set, that wasn't previously presented to the model
